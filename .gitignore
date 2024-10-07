@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+/out
+/.idea
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/otecs-day01.iml
+/otecs-day03.iml
