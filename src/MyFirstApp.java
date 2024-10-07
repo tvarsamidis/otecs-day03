@@ -1,7 +1,7 @@
 public class MyFirstApp {
     public static void main(String[] args) {
         int num1 = 200;
-        int num2 = 300;
+        int num2 = 400; // thomas
         int num3 = 100;
         int max = num1;
         if (max < num2) {
