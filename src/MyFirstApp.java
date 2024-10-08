@@ -25,16 +25,6 @@ public class MyFirstApp {
         return absoluteX;
     }
 
-    public static int maxOf3(int a, int b, int c){
-        int max = a;
-        if (max < b) {
-            max = b;
-        }
-        if (max < c) {
-            max = c;
-        }
-        return max;
-    }
 
 
     public static void main(String[] args) {
@@ -46,7 +36,34 @@ public class MyFirstApp {
 
         System.out.println("The largest number of " + num1 +
                            ", " + num2 + ", " + num3 +" is " + max);
-        sayStatus("Dimitris");
 
+        String initials = nameInitals("Kate","Zed");
+        System.out.println(initials);
+
+    }
+
+    public static String nameInitals(String firstName, String lastName) {
+        char f = firstName.charAt(0);
+        char l = lastName.charAt(0);
+        return "" + f + l;
+    }
+
+    /**
+     * This method returns the largest of 3 integers
+     * @param a the first integer
+     * @param b the second integer
+     * @param c the third integer
+     * @return the largest integer. If two or more integers are both
+     * the largest, any one of them is returned.
+     */
+    public static int maxOf3(int a, int b, int c){
+        int max = a;
+        if (max < b) {
+            max = b;
+        }
+        if (max < c) {
+            max = c;
+        }
+        return max;
     }
 }
